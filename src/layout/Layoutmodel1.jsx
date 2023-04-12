@@ -1,9 +1,16 @@
 
 import React from 'react'
+import Header from '../components/Header'
+import { Article } from '../components/GlobalStyled'
 
 function Layoutmodel1() {
   return (
-    <div>Layoutmodel1</div>
+    <>
+    <Header/>
+    <Article>
+      <div>콘텐츠 영역</div>
+    </Article>
+    </>
   )
 }
 
