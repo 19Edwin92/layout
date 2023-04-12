@@ -11,6 +11,7 @@ function Layoutmodel1() {
     <Header/>
     <Article>
       <MainFlex ai="center" gap="19" fw="wrap">
+        <Layout>콘텐츠영역</Layout>
         {[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].map(el => <Artgrambox></Artgrambox>)}
       </MainFlex>
     </Article>
