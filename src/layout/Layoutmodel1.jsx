@@ -10,10 +10,13 @@ function Layoutmodel1() {
     <>
     <Header/>
     <Article>
-      <MainFlex ai="center" gap="23" fw="wrap">
+      <MainFlex ai="center" jc="space-between" fw="wrap">
         <Layout>콘텐츠영역</Layout>
-        {[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].map(el => <Artgrambox></Artgrambox>)}
+        {[1,1,1,1].map(el => <Artgrambox></Artgrambox>)}
       </MainFlex>
+      <MainFlex2>
+      {[1,1,1,1,1,1,1,1,1,1,1,1,1,1,].map(el => <Artgrambox2></Artgrambox2>)}
+      </MainFlex2>
     </Article>
     </>
   )
@@ -31,6 +34,15 @@ const Layout = styled.div`
   background-color: yellow;
   text-align: right;
 `
+const MainFlex2 = styled.div`
+ width:auto;
+  min-height:400px;
+  margin: 50px 75px 100px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 23px;
+`
+
 
 const MainFlex = styled(Flex)`
   width:auto;
@@ -41,10 +53,22 @@ const MainFlex = styled(Flex)`
 
 const Artgrambox = styled(Flex)`
   width:364px;
+  margin-top:30px;
   min-width:364px;
   min-height:436px;
   max-height:436px;
   background-color:red;
+  border-radius: 8px;
+  position: relative;
+`
+
+const Artgrambox2 = styled(Flex)`
+  width:364px;
+  margin-top:30px;
+  min-width:364px;
+  min-height:436px;
+  max-height:436px;
+  background-color:green;
   border-radius: 8px;
   position: relative;
 `
