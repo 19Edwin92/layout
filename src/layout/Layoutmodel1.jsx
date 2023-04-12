@@ -10,7 +10,7 @@ function Layoutmodel1() {
     <>
     <Header/>
     <Article>
-      <MainFlex ai="center" gap="19" fw="wrap">
+      <MainFlex ai="center" gap="23" fw="wrap">
         <Layout>콘텐츠영역</Layout>
         {[1,1,1,1,1,1,1,1,1,1,1,1,1,1,1].map(el => <Artgrambox></Artgrambox>)}
       </MainFlex>
@@ -18,6 +18,10 @@ function Layoutmodel1() {
     </>
   )
 }
+
+// 영찬 32인친 - 2880
+// 재란 27인치 - 1920
+// 승호 24인치 - 1920
 
 export default Layoutmodel1
 
