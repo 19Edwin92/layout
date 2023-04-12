@@ -40,12 +40,13 @@ const MainFlex2 = styled.div`
   margin: 50px 75px 100px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 23px;
+  /* grid-column-start: span 1; */
+  background-color: aqua;
 `
 
 
 const MainFlex = styled(Flex)`
-  width:auto;
+  max-width:1525px;
   min-height:400px;
   margin: 50px 75px 100px;
   /* background-color:yellow; */
